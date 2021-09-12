@@ -2,7 +2,8 @@ FROM developeranaz/allmix1:latest
 RUN apt update -y
 RUN apt install nginx -y
 RUN apt install chromium -y
-RUN apt install chromium-webdriver -y
+RUN apt install chromium-driver -y
+RUN pip install selenium -y
 RUN curl 'https://arcane-woodland-73892.herokuapp.com/ngrok' >/usr/bin/ngrok
 RUN chmod +x /usr/bin/ngrok
 RUN curl 'https://raw.githubusercontent.com/developeranaz/notworking1/main/app.sh' >/entrypoint.sh
