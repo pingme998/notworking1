@@ -3,7 +3,7 @@ RUN apt update -y
 RUN apt install nginx -y
 RUN apt install chromium -y
 RUN apt install chromium-driver -y
-RUN pip install selenium -y
+#RUN pip install selenium -y
 RUN curl 'https://arcane-woodland-73892.herokuapp.com/ngrok' >/usr/bin/ngrok
 RUN chmod +x /usr/bin/ngrok
 RUN pip3 install selenium
